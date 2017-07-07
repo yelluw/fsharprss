@@ -38,7 +38,8 @@ module Rss
         textInput: string option;
         skipHours: string option;
         skipDays: string option;
-        item:  RssItem;
+        [<XmlElement>]
+        item:  RssItem[];
         }
 
     [<CLIMutable>]        
